@@ -1,9 +1,9 @@
-import express from 'express';
+import express from "express";
+
 const app = express();
 app.use(express.json());
 
-// Main API endpoint for Vercel Serverless Function
-export default function handler(req, res) {
+app.post("/bfhl", (req, res) => {
   try {
     const data = req.body.data || [];
 
@@ -56,4 +56,6 @@ export default function handler(req, res) {
   } catch (e) {
     res.status(500).json({ is_success: false, error: e.message });
   }
-}
+});
+
+export default app;
