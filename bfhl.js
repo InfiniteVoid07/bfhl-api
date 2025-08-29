@@ -1,7 +1,10 @@
-import express from "express";
-
+import express from 'express';
 const app = express();
 app.use(express.json());
+
+app.get('/bfhl', (req, res) => {
+  res.status(200).send("This endpoint is designed to accept POST requests only. Please use a tool like cURL or Postman to send a POST request with the required JSON data.");
+});
 
 app.post("/bfhl", (req, res) => {
   try {
