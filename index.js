@@ -8,7 +8,7 @@ app.post("/bfhl", (req, res) => {
     const data = req.body.data || [];
 
     const user_id = "harshit_chaudhary_01072003";
-    const email = "harshit.chudhary2022@vitstudent.ac.in";
+    const email = "harshit.chaudhary2022@vitstudent.ac.in";
     const roll_number = "22BRS1277";
 
     const even_numbers = [];
